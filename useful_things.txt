@@ -1,0 +1,6 @@
+request GET:
+curl http://localhost:8080/api-v1/event/getAll
+
+request POST:
+curl --header "Content-Type: application/json"   --request POST   --data '{"email": "test@gmail.com", "message": "Hello world!!!"}'   http://localhost:8080/api-v1/user/sendMessage
+curl --header "Content-Type: application/json"   --request POST   --data '{"tele_id": 5736117831, "rule": {"is_block_bot": true, "is_create_admin": true, "is_remove_admin": true}}'   http://localhost:8080/api-v1/admin/createAdmin
